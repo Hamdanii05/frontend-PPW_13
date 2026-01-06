@@ -1,0 +1,16 @@
+.head ul{
+    display: flex;
+    gap: 10px;
+    background-color: grey;
+    padding: 15px;
+   
+   
+}
+.head ul li {
+    list-style: none;
+    text-decoration: none;
+}
+.head ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}

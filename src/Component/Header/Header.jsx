@@ -1,10 +1,12 @@
+import "./Header.css"
+
 const Header = () => {
     return (
-        <nav>
+        <nav className="head">
             <ul>
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Login</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Login</a></li>
             </ul>
         </nav>
     )

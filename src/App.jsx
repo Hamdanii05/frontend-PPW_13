@@ -8,10 +8,10 @@ function App() {
   return (
     <>
     <Header />
-    <h1>---=( Daftar Mobil )=---</h1>
-    <Data nama=  "Lamborghini" kapasitas=  " 2 orang"/>
-    <Data nama=  "Porsche" kapasitas=  "2 orang"/>
-    <Data nama=  "BMW" kapasitas=  "2 orang"/>
+    <h1 className="title">( Daftar Mobil )</h1>
+    <div className='container'>
+    <Data gambar=""/>
+    </div>
     <Footer nama="Hamdan"/>
     </>
   )
