@@ -1,6 +1,6 @@
 import "./Data.css"
 
-const Data = ({nama, kapasitas, gambar}) => {
+const Data = ({gambar,nama, price}) => {
     return(
         
         <div className="card">
@@ -9,8 +9,8 @@ const Data = ({nama, kapasitas, gambar}) => {
             </div>
             <div className="card-body">
                 <p>{nama}</p>
-                <p>{kapasitas}</p>
-                <button>Detail</button>
+                <p className="harga">{price}</p>
+                <button className="btn">Detail</button>
             </div>
         </div>
     )
