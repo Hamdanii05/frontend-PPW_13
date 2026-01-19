@@ -1,5 +1,5 @@
 import "./Header.css"
-import {FaSearch, FaUser} from "react-icons/fa"
+import { FaUserCircle} from "react-icons/fa"
 
 const Header = () => {
     return (
@@ -12,8 +12,7 @@ const Header = () => {
                
             </ul>
             <div className="icons">
-                <FaSearch/>
-                <FaUser/>
+                <FaUserCircle/>
             </div>
         </nav>
     )

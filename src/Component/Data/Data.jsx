@@ -1,18 +1,56 @@
 import "./Data.css"
+import { useState } from "react";
+import { FaSearch } from "react-icons/fa"
 
-const Data = ({gambar,nama, price}) => {
-    return(
-        
-        <div className="card">
+const Data = ({ data = [] }) => {
+  const [searchInput, setSearchInput] = useState("");
+  const [searchText, setSearchText] = useState("");
+
+  const cari =
+    searchText === ""
+      ? data
+      : data.filter((mobil) =>
+          mobil.nama_mobil.toLowerCase().includes(searchText.toLowerCase())
+        );
+
+  return (
+    <div>
+      <div className="search">
+        <input
+          type="text"
+          placeholder="Cari Mobil"
+          value={searchInput}
+          onChange={(e) => setSearchInput(e.target.value)}
+        />
+
+        <button onClick={() => setSearchText(searchInput)}>
+          <FaSearch />
+        </button>
+
+        <br />
+        {searchText && (
+          <small>
+            Di temukan <b>{cari.length}</b> data dengan pencarian kata: <b>{searchText}</b>
+          </small>
+        )}
+      </div>
+
+      <div className="konten">
+        {cari.map((date, index) => (
+          <div className="card" key={index}>
             <div className="card-head">
-                <img src={gambar} alt="" />
+              <img src={date.gambar} alt={date.nama_mobil} />
             </div>
             <div className="card-body">
-                <p>{nama}</p>
-                <p className="harga">{price}</p>
-                <button className="btn">Detail</button>
+              <p>{date.nama_mobil}</p>
+              <p className="harga">{date.harga_sewa}</p>
+              <button className="btn">Detail</button>
             </div>
-        </div>
-    )
-}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
 export default Data;

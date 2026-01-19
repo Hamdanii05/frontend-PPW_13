@@ -52,3 +52,26 @@
     margin-top: 10px;
     color: rgb(243, 5, 5);
 }
+.konten {
+    display:grid ;
+    grid-template-columns: repeat(5, 1fr);
+
+}
+
+.search {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.search input{
+
+    border: 0.5 solid;
+    height: 25px;
+    width: 250px;
+}
+button {
+    border: none;
+    margin-left: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    background: white;
+}
