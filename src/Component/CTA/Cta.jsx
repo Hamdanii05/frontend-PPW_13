@@ -1,15 +1,15 @@
 import "./Cta.css"
-const Cta = ({ title, description, buttonText, image }) => {
+const Cta = () => {
   return (
     <section className="cta">
       <div className="cta-content">
-        <h2>{title}</h2>
-        <p>{description}</p>
-        <button>{buttonText}</button>
+        <h2>Luxury car rental</h2>
+        <p>Find your dream car here!</p>
+        <button>See All</button>
       </div>
 
       <div className="cta-image">
-        <img src={image} alt="CTA" />
+        <img src="../../../public/image/CTA.png" alt="CTA" />
       </div>
     </section>
   );
