@@ -1,7 +1,7 @@
-.card{
+.kartu{
     border-radius: 10px ;
     width: 300px;
-    height: 350px;
+    height: 400px;
     margin: 10px 10px 0 0;
     border-color: rgb(238, 13, 13);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -10,30 +10,30 @@
     box-shadow 0.3s ease;
     overflow: hidden;
 }
-.card:hover{
+.kartu:hover{
     transform: translateY(-8px);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
-.card-head {
+.kartu-head {
     height: 200px;
 }
-.card img{
+.kartu img{
     width: 300px;
     height: 200px;
     border-radius: 10px 10px 0 0;
     transition: transform 0.4s ease;
 }
-.card img:hover{
+.kartu img:hover{
     transform: scale(1.1);
 }
-.card-body{
+.kartu-body{
     font-family: 'poppins', sans-serif;
     margin-top: 40px;
     padding: 10px;
     font-weight: bold;
     background: white;
 }
-.btn  {
+.tombol  {
     margin-top: 15px;
     justify-content: center;
     border-radius: 20px;
@@ -45,7 +45,7 @@
     width: 100%;
     height: 30px;
 }
-.btn:hover{
+.tombol:hover{
     color: rgb(51, 48, 53);
 }
 .harga {
@@ -55,6 +55,7 @@
 .konten {
     display:grid ;
     grid-template-columns: repeat(5, 1fr);
+    margin-left: 10px;
 
 }
 
@@ -69,9 +70,9 @@
     width: 250px;
     margin-top: 100px;
 }
-button {
+.tmb {
     border: none;
-    margin-left: 10px;
+    margin-left: 15px;
     font-size: 15px;
     cursor: pointer;
     background: white;

@@ -23,7 +23,7 @@ const Data = ({ data = [] }) => {
           onChange={(e) => setSearchInput(e.target.value)}
         />
 
-        <button onClick={() => setSearchText(searchInput)}>
+        <button onClick={() => setSearchText(searchInput)} className="tmb">
           <FaSearch />
         </button>
 
@@ -37,14 +37,14 @@ const Data = ({ data = [] }) => {
 
       <div className="konten">
         {cari.map((date, index) => (
-          <div className="card" key={index}>
-            <div className="card-head">
+          <div className="kartu" key={index}>
+            <div className="kartu-head">
               <img src={date.gambar} alt={date.nama_mobil} />
             </div>
-            <div className="card-body">
+            <div className="kartu-body">
               <p>{date.nama_mobil}</p>
               <p className="harga">{date.harga_sewa}</p>
-              <button className="btn">Detail</button>
+              <button className="tombol">Detail</button>
             </div>
           </div>
         ))}

@@ -8,16 +8,26 @@ const PageError = () => {
   return (
     <div>
       <Header />
-      <div className="error-container">
-        <h1>404</h1>
-        <h3>Halaman Tidak Ditemukan</h3>
-        <p>Oops... Halaman yang kamu cari tidak tersedia atau sudah dipindahkan.</p>
+      <div className="error-wrapper">
+        <div className="error-left">
+          <span className="error-code">404</span>
+          <h2>Oops! Halaman tidak ditemukan</h2>
+          <p>
+            Sepertinya halaman yang kamu tuju sudah dihapus, dipindahkan,
+            atau URL-nya salah.
+          </p>
 
-        <div className="error-action">
-          <NavLink to="/" className="btn-home">Home</NavLink>
-          <button className="btn-back" onClick={() => navigate(-1)}>
-            Kembali
-          </button>
+          <div className="error-action">
+            <NavLink to="/" className="btn-primary">Ke Beranda</NavLink>
+            <button className="btn-secondary" onClick={() => navigate(-1)}>
+              Kembali
+            </button>
+          </div>
+        </div>
+
+        <div className="error-right">
+          <div className="circle"></div>
+          <div className="circle small"></div>
         </div>
       </div>
     </div>
